@@ -1,62 +1,37 @@
 title: Pip3
-
-author:
-  name: German Ivanov
-  email: germanivanov0719@gmail.com
-
-# The `>` after `description:` means to ignore line-breaks until next key.
-# If you want to omit the line-break after the end of text, use `>-` instead.
-description: >
-  Reviews of Python libraries
-
-# Build settings
+description: Reviews of Python libraries
 
 theme: minima
 
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
+author: "German Ivanov"
+email: germanivanov0719@gmail
 
-# Theme-specific settings
+base_url: /pip3-website
 
-minima:
-  skin: auto
-  social_links:
-    - platform: github
-      user_url: https://github.com/germanivanov0719
-      title: My GitHub profile
-    # - { platform: github,         user_url: "https://github.com/germanivanov0719" }
+github_username: germanivanov0719
+rss: rss
 
-  # Minima date format.
-  # Refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this.
-  #
-  # date_format: "%b %-d, %Y"
+# Minima: show excerpts in the frontpage
+show_excerpts: true
+# Build settings
 
-  # Generate social links in footer.
-  #
-  # social_links:
-  #   - { platform: devto,          user_url: "https://dev.to/jekyll" }
-  #   - { platform: dribbble,       user_url: "https://dribbble.com/jekyll" }
-  #   - { platform: facebook,       user_url: "https://www.facebook.com/jekyll" }
-  #   - { platform: flickr,         user_url: "https://www.flickr.com/photos/jekyll" }
-  #   - { platform: github,         user_url: "https://github.com/jekyll/minima" }
-  #   - { platform: google_scholar, user_url: "https://scholar.google.com/citations?user=qc6CJjYAAAAJ" }
-  #   - { platform: instagram,      user_url: "https://www.instagram.com/jekyll" }
-  #   - { platform: keybase,        user_url: "https://keybase.io/jekyll" }
-  #   - { platform: linkedin,       user_url: "https://www.linkedin.com/in/jekyll" }
-  #   - { platform: microdotblog,   user_url: "https://micro.blog/jekyll" }
-  #   - { platform: pinterest,      user_url: "https://www.pinterest.com/jekyll" }
-  #   - { platform: stackoverflow,  user_url: "https://stackoverflow.com/users/1234567/jekyll" }
-  #   - { platform: telegram,       user_url: "https://t.me/jekyll" }
-  #   - { platform: twitter,        user_url: "https://twitter.com/jekyllrb" }
-  #   - { platform: youtube,        user_url: "https://www.youtube.com/jekyll" }
+# plugins:
+#   - jekyll-feed
+#   - jekyll-seo-tag
 
-# If you want to link only specific pages in your header, uncomment this and add the path to the pages in
-# order as they should show up.
-#
-# header_pages:
-#   - about.md
+# Minima: custom header links
+header_pages:
+  - _pages/frontpage.md
+  - _pages/about.md
+  - _pages/archive.md
 
-# Set to `true` to show excerpts on the homepage.
-#
-# show_excerpts: false
+include:
+  - _pages
+
+exclude:
+  - .gitignore
+  - docker-compose.yml
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
