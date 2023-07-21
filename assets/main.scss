@@ -2,3 +2,16 @@
 ---
 
 @import "minima";
+
+// Fira Code (monospace, for code)
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&display=swap");
+// Merriweather (serif, for body text)
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&family=Merriweather&display=swap");
+
+body {
+  font-family: "Merriweather", serif;
+}
+
+code {
+  font-family: "Fira Code", monospace;
+}
