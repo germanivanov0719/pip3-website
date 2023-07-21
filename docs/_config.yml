@@ -1,7 +1,0 @@
-theme: minima
-minima:
-  skin: auto
-  social_links:
-    - platform: github
-      user_url: https://github.com/germanivanov0719
-      title: My GitHub profile
