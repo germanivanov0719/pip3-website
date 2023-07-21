@@ -32,4 +32,4 @@ print("Hello, World!")
 print("sqrt(2) is approximately", sqrt(2))
 ```
 
-However, if you're too lazy to do that, we have good news for you: we've already prepared [a file](/storage/main.py) for you to run!
+However, if you're too lazy to do that, we have good news for you: we've already prepared [a file]({{settings.baseurl}}/storage/main.py) for you to run!

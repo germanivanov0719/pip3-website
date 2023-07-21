@@ -15,9 +15,17 @@ rss: rss
 show_excerpts: true
 # Build settings
 
-# plugins:
+plugins:
+  - jekyll-polyglot
 #   - jekyll-feed
 #   - jekyll-seo-tag
+
+languages: ["ru", "en"]
+default_lang: "ru"
+exclude_from_localization: ["assets"]
+parallel_localization: true
+
+
 
 # Minima: custom header links
 header_pages:
