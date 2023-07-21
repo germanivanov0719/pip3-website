@@ -24,7 +24,7 @@ languages: ["ru", "en"]
 default_lang: "ru"
 exclude_from_localization: ["assets"]
 parallel_localization: true
-date_format: "%Y-%m-%d в %H:%M"
+date_format: "%Y-%m-%d"
 
 
 
