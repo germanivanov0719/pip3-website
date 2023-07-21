@@ -19,12 +19,12 @@ plugins:
   - jekyll-polyglot
 #   - jekyll-feed
 #   - jekyll-seo-tag
-
-languages: ["ru", "en"]
-default_lang: "ru"
+minima:
+  date_format: "%Y-%m-%d"
+  languages: ["ru", "en"]
+  default_lang: "ru"
 exclude_from_localization: ["assets"]
 parallel_localization: true
-date_format: "%Y-%m-%d"
 
 
 
